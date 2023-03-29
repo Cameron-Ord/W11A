@@ -18,4 +18,7 @@ for(counter = 0; counter < change_image.length; counter = counter +1){
 change_image[counter].addEventListener(`click`, change_the_image)
 
 
-}
+};
+
+
+
