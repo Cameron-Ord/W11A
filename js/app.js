@@ -20,5 +20,3 @@ change_image[counter].addEventListener(`click`, change_the_image)
 
 };
 
-
-
