@@ -20,26 +20,30 @@ change_image[counter].addEventListener(`click`, change_the_image)
 
 };
 
+
+
+
 function poke_select(details){
 
     Cookies.set(`selection`, details[`target`].getAttribute(`pokemon`));
 
 if(details[`target`].getAttribute(`pokemon`) === `bidoof`){
 
-console.log(`bidoof`);
+Cookies.set(`selection`, bidoof_json);
 
-}else if(details[`target`].getAttribute(`pokemon`) === `furugly`){
+}else if(details[`target`].getAttribute(`pokemon`) === `purugly`){
 
-    console.log(`furugly`);
+Cookies.set(`selection`, purugly_json);
     
-}else if(detail[`target`].getAttribute(`pokemon`) === `bibarel`){
+}else if(details[`target`].getAttribute(`pokemon`) === `bibarel`){
 
+Cookies.set(`selection`, bibarel_json);
 
-    console.log(`bibarel`);
-}
-
-    
 };
+return false;
+};
+
+
 
 let choice = document.querySelectorAll(`.button`);
 
@@ -47,6 +51,8 @@ for(let  counter = 0; counter < choice.length; counter = counter +1){
 
     choice[counter].addEventListener(`click`, poke_select);
 };
+
+
 
 let bidoof ={
 
@@ -79,6 +85,12 @@ let purugly = {
 
     image_url: `fat`
 };
+
+let bidoof_json = JSON.stringify(bidoof);
+let purugly_json = JSON.stringify(purugly);
+let bibarel_json = JSON.stringify(bibarel);
+
+
 
 
 
