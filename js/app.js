@@ -23,9 +23,26 @@ change_image[counter].addEventListener(`click`, change_the_image)
 function poke_select(details){
 
     Cookies.set(`selection`, details[`target`].getAttribute(`pokemon`));
+
+if(details[`target`].getAttribute(`pokemon`) === `bidoof`){
+
+console.log(`bidoof`);
+
+}else if(details[`target`].getAttribute(`pokemon`) === `furugly`){
+
+    console.log(`furugly`);
+    
+}else if(detail[`target`].getAttribute(`pokemon`) === `bibarel`){
+
+
+    console.log(`bibarel`);
+}
+
+    
 };
 
 let choice = document.querySelectorAll(`.button`);
+
 for(let  counter = 0; counter < choice.length; counter = counter +1){
 
     choice[counter].addEventListener(`click`, poke_select);
@@ -62,8 +79,6 @@ let purugly = {
 
     image_url: `fat`
 };
-
-let chosen_pokemon = Cookies.get(`selection`)
 
 
 
