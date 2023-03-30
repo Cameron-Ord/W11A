@@ -1,30 +1,4 @@
 
-//this is random code for previous assignments, i just duplicated the template for this assingment//
-
-function change_the_image(image){
-
-if(image[`target`].getAttribute(`src`) === `/images/399.png`){
-
-    image[`target`].setAttribute(`src`, `https://www.serebii.net/swordshield/pokemon/399.png`);
-
-}else{
-
-    image[`target`].setAttribute(`src`, `/images/399.png`);
-}
-
-};
-
-let change_image = document.querySelectorAll(`.page_span`);
-
-for(counter = 0; counter < change_image.length; counter = counter +1){
-
-change_image[counter].addEventListener(`click`, change_the_image)
-
-
-};
-
-
-
 
 
 //this function goes through if statements depending on which pokemon button I select, then sets the stringified object as the selection//
